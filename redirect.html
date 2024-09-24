@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>앱 다운로드 링크</title>
     <script>
-        function redirectToStore() {
+        window.onload = function() {
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
             // iOS 체크
@@ -20,10 +20,9 @@
             else {
                 alert("지원되지 않는 플랫폼입니다.");
             }
-        }
+        };
     </script>
 </head>
 <body>
-    <button onclick="redirectToStore()">앱 다운로드</button>
 </body>
 </html>
